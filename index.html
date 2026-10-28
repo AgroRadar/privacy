@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aviso de privacidad · AgroRadar</title>
+<meta name="description" content="Aviso de privacidad y política de privacidad de la aplicación AgroRadar para Android: qué datos se recaban, para qué, con quién se comparten y cómo ejercer tus derechos o eliminar tu cuenta.">
+<style>
+  :root {
+    --bg: #f6f7f9;
+    --surface: #ffffff;
+    --text: #1a1d21;
+    --muted: #5b6470;
+    --line: #e3e6ea;
+    --accent: #2563eb;
+    --accent-soft: #eaf0ff;
+    --brand: #15803d;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #121417;
+      --surface: #1b1e23;
+      --text: #e8eaed;
+      --muted: #a3abb6;
+      --line: #2e333a;
+      --accent: #8fb0ff;
+      --accent-soft: #1c2742;
+      --brand: #6ee7a0;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #121417;
+    --surface: #1b1e23;
+    --text: #e8eaed;
+    --muted: #a3abb6;
+    --line: #2e333a;
+    --accent: #8fb0ff;
+    --accent-soft: #1c2742;
+    --brand: #6ee7a0;
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  @media (prefers-reduced-motion: no-preference) {
+    html { scroll-behavior: smooth; }
+  }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent); overflow-wrap: anywhere; }
+  b, strong { font-weight: 650; }
+
+  .wrap { max-width: 780px; margin: 0 auto; padding: 0 16px; }
+
+  .hero {
+    background: var(--surface);
+    border-bottom: 1px solid var(--line);
+    padding: 40px 0 32px;
+  }
+  .brand {
+    margin: 0 0 6px;
+    color: var(--brand);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-size: 13px;
+  }
+  h1 { margin: 0 0 8px; font-size: clamp(28px, 6vw, 38px); line-height: 1.15; }
+  .lead { margin: 0 0 12px; color: var(--muted); font-size: 17px; }
+  .updated { margin: 0; color: var(--muted); font-size: 14px; }
+
+  .toc {
+    margin: 28px 0 8px;
+    padding: 18px 22px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+  }
+  .toc h2 { margin: 0 0 8px; font-size: 15px; color: var(--muted); }
+  .toc ol { margin: 0; padding-left: 22px; columns: 2 260px; column-gap: 28px; }
+  .toc li { margin: 3px 0; break-inside: avoid; }
+
+  section { padding: 26px 0 6px; border-bottom: 1px solid var(--line); scroll-margin-top: 12px; }
+  section:last-of-type { border-bottom: 0; }
+  h2 { margin: 0 0 12px; font-size: 22px; line-height: 1.3; }
+  h3 { margin: 22px 0 8px; font-size: 17px; }
+  p, ul, ol { margin: 0 0 14px; }
+  li { margin: 4px 0; }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin: 0 0 14px;
+  }
+  .card p:last-child { margin-bottom: 0; }
+  .note {
+    background: var(--accent-soft);
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin: 0 0 14px;
+  }
+  .note p:last-child { margin-bottom: 0; }
+
+  .table-wrap { overflow-x: auto; margin: 0 0 14px; }
+  table { width: 100%; min-width: 520px; border-collapse: collapse; font-size: 15px; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 0.03em; }
+
+  footer { padding: 28px 0 44px; color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="brand">AgroRadar</p>
+    <h1>Aviso de privacidad</h1>
+    <p class="lead">Política de privacidad de la aplicación AgroRadar para Android y de su panel de administración.</p>
+    <p class="updated">Última actualización: 28 de octubre de 2026</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <nav class="toc" aria-label="Contenido">
+    <h2>Contenido</h2>
+    <ol>
+      <li><a href="#responsable">Responsable</a></li>
+      <li><a href="#alcance">A quién aplica este aviso</a></li>
+      <li><a href="#datos">Datos que recabamos</a></li>
+      <li><a href="#permisos">Permisos que usa la app</a></li>
+      <li><a href="#finalidades">Para qué usamos los datos</a></li>
+      <li><a href="#compartir">Con quién compartimos los datos</a></li>
+      <li><a href="#dispositivo">Datos guardados en tu teléfono</a></li>
+      <li><a href="#conservacion">Cuánto tiempo los conservamos</a></li>
+      <li><a href="#seguridad">Seguridad</a></li>
+      <li><a href="#derechos">Tus derechos (ARCO)</a></li>
+      <li><a href="#eliminar-cuenta">Eliminar tu cuenta y tus datos</a></li>
+      <li><a href="#menores">Menores de edad</a></li>
+      <li><a href="#cambios">Cambios a este aviso</a></li>
+      <li><a href="#autoridad">Autoridad</a></li>
+    </ol>
+  </nav>
+
+  <section id="responsable">
+    <h2>1. Responsable</h2>
+    <p><strong>RIOS FIGUEROA VICTOR MANUEL</strong> (en adelante, «el Responsable»), con domicilio en
+      Calle Villas del Bosque 43, Camino a Coyotepec, Lomas de San Juan, Xoxocotlán, C.P. 71230, México,
+      es responsable del tratamiento de los datos personales que se recaban por medio de la aplicación
+      móvil <strong>AgroRadar</strong> (identificador en Google Play: <code>com.mapSurvey</code>) y de su
+      panel de administración, conforme a la Ley Federal de Protección de Datos Personales en Posesión
+      de los Particulares.</p>
+    <div class="card">
+      <p>Contacto para cualquier asunto de privacidad:
+        <a href="mailto:factura@riosagconsulting.com">factura@riosagconsulting.com</a></p>
+    </div>
+  </section>
+
+  <section id="alcance">
+    <h2>2. A quién aplica este aviso</h2>
+    <p>AgroRadar es una herramienta de trabajo de campo. Las personas registradas en la app
+      (encuestadoras) responden cuestionarios con productores y otras personas entrevistadas, incluso
+      sin conexión a internet. Las respuestas se envían al Responsable cuando el teléfono vuelve a tener
+      conexión.</p>
+    <p>Este aviso aplica a:</p>
+    <ul>
+      <li><strong>Personas usuarias de la app</strong>: quienes crean una cuenta para levantar encuestas.</li>
+      <li><strong>Personas entrevistadas</strong>: aquellas cuyos datos se registran en los cuestionarios.
+        Quien realiza la entrevista debe informarle de este aviso antes de registrar sus datos y puede
+        mostrarle esta página.</li>
+    </ul>
+    <p>Al crear tu cuenta y usar la app, aceptas que tus datos se traten conforme a este aviso.</p>
+  </section>
+
+  <section id="datos">
+    <h2>3. Datos que recabamos</h2>
+
+    <h3>3.1 Datos de tu cuenta</h3>
+    <ul>
+      <li>Nombre (opcional).</li>
+      <li>Número de teléfono.</li>
+      <li>Nombre de usuario.</li>
+      <li>Contraseña. En el servidor se guarda transformada con un algoritmo de <em>hash</em>
+        irreversible, por lo que nadie puede leerla.</li>
+    </ul>
+    <p>No pedimos correo electrónico.</p>
+
+    <h3>3.2 Datos que se registran al levantar una encuesta</h3>
+    <ul>
+      <li>Las respuestas al cuestionario.</li>
+      <li>La <strong>ubicación aproximada</strong> del teléfono. Se lee una sola vez, al enviar la
+        encuesta, y se convierte en ciudad y colonia. Si no se puede convertir, se guardan las
+        coordenadas aproximadas.</li>
+      <li>Una <strong>fotografía</strong> obligatoria, tomada con la cámara al terminar la encuesta.
+        La app no accede a tu galería.</li>
+      <li>La fecha y hora del envío y, si la encuesta se suspendió antes de terminar, en qué pregunta.</li>
+    </ul>
+    <p>Cada encuesta enviada queda asociada a tu cuenta.</p>
+
+    <h3>3.3 Datos de las personas entrevistadas</h3>
+    <p>Los que pida cada cuestionario: por ejemplo nombre, teléfono, actividad productiva, prácticas
+      de cultivo u opiniones. También la ubicación aproximada de la entrevista y la fotografía, que
+      puede mostrar a la persona entrevistada o su predio.</p>
+
+    <h3>3.4 Datos técnicos</h3>
+    <ul>
+      <li>Un identificador para enviarte notificaciones (token de Firebase Cloud Messaging).</li>
+      <li>El identificador de instancia de la app, el identificador de publicidad de Android y datos
+        de uso y del dispositivo: modelo, versión de Android, idioma, país aproximado y pantallas
+        visitadas. Los recoge Google Analytics para Firebase.</li>
+      <li>Reportes de errores y fallos de la app: tipo de error, versión de la app, y modelo y sistema
+        del dispositivo. Se envían a Sentry junto con el número interno de tu cuenta, sin tu nombre,
+        teléfono ni usuario.</li>
+    </ul>
+
+    <h3>3.5 Datos sensibles</h3>
+    <p>La app no está diseñada para recabar datos personales sensibles, como los relativos a la salud,
+      el origen étnico o las creencias religiosas. Si un cuestionario llegara a requerirlos, se
+      recabará antes el consentimiento expreso de la persona entrevistada.</p>
+  </section>
+
+  <section id="permisos">
+    <h2>4. Permisos que usa la app</h2>
+    <ul>
+      <li><strong>Ubicación aproximada</strong>: para registrar el lugar de la encuesta al enviarla.
+        La app no usa la ubicación precisa ni la ubicación en segundo plano.</li>
+      <li><strong>Cámara</strong>: para tomar la fotografía de la encuesta.</li>
+      <li><strong>Notificaciones</strong>: para avisarte de encuestas nuevas y de envíos que no se
+        pudieron procesar.</li>
+      <li><strong>Internet y estado de la red</strong>: para enviar las respuestas cuando hay conexión.</li>
+      <li><strong>Lectura automática del código por SMS</strong>: al recuperar tu contraseña, la app usa
+        la API SMS Retriever de Google, que le entrega únicamente el mensaje con el código. La app no
+        lee tus otros mensajes ni pide permiso de SMS.</li>
+    </ul>
+    <p>Puedes retirar estos permisos en los ajustes de Android. Sin ubicación, la encuesta se envía
+      como «ubicación desconocida». Sin cámara no se puede terminar una encuesta, porque la fotografía
+      es obligatoria.</p>
+  </section>
+
+  <section id="finalidades">
+    <h2>5. Para qué usamos los datos</h2>
+    <p>Usamos los datos para estas finalidades, que son necesarias para el servicio:</p>
+    <ol type="a">
+      <li>Crear y administrar tu cuenta, e identificarte al iniciar sesión.</li>
+      <li>Recuperar tu contraseña por medio de un código enviado por SMS.</li>
+      <li>Entregarte las encuestas disponibles y avisarte cuando haya nuevas.</li>
+      <li>Registrar las respuestas, guardarlas hasta que puedan enviarse y adjuntarles la ubicación
+        aproximada y la fotografía, como evidencia de que la encuesta se levantó en campo.</li>
+      <li>Mostrar los resultados al personal autorizado del Responsable, para analizar los estudios y
+        verificar la calidad del levantamiento.</li>
+      <li>Mantener la seguridad y el funcionamiento de la app, medir cómo se usa, y detectar y corregir
+        errores.</li>
+    </ol>
+    <div class="note">
+      <p>No vendemos datos personales ni los usamos para publicidad o mercadotecnia.</p>
+    </div>
+  </section>
+
+  <section id="compartir">
+    <h2>6. Con quién compartimos los datos</h2>
+    <p>Para operar la app, el Responsable se apoya en los proveedores siguientes. Tratan los datos
+      solo para prestarle su servicio (como encargados). Algunos se encuentran fuera de México,
+      principalmente en Estados Unidos.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Proveedor</th><th>Para qué</th><th>Qué datos recibe</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>DigitalOcean</td><td>Alojamiento del servidor y de la base de datos</td><td>Los datos de las cuentas y de las encuestas</td></tr>
+          <tr><td>Twilio</td><td>Envío del SMS para recuperar la contraseña</td><td>Número de teléfono y código</td></tr>
+          <tr><td>Google — Firebase Cloud Messaging</td><td>Envío de notificaciones</td><td>Token de notificaciones</td></tr>
+          <tr><td>Google — Google Analytics para Firebase</td><td>Estadísticas de uso de la app</td><td>Identificadores de instancia y de publicidad, y datos de uso y del dispositivo</td></tr>
+          <tr><td>Google — servicios de Google Play y de Android</td><td>Obtener la ubicación aproximada, convertirla en ciudad y colonia, y mostrar mapas</td><td>Coordenadas aproximadas y datos del dispositivo</td></tr>
+          <tr><td>Sentry (Functional Software, Inc.)</td><td>Registro de errores de la app</td><td>Reportes de errores, datos del dispositivo y número interno de la cuenta</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Además:</p>
+    <ul>
+      <li>El <strong>personal autorizado del Responsable</strong> consulta, desde el panel de
+        administración, las respuestas, la fotografía, la ubicación y el nombre, usuario y teléfono de
+        quien levantó cada encuesta.</li>
+      <li>Las <strong>autoridades competentes</strong> pueden recibir datos cuando la ley lo exija.</li>
+    </ul>
+    <p>Fuera de estos casos, no transferimos datos personales a terceros sin tu consentimiento.</p>
+  </section>
+
+  <section id="dispositivo">
+    <h2>7. Datos guardados en tu teléfono</h2>
+    <p>Para que la app funcione sin conexión, guarda en tu teléfono las encuestas disponibles, tus
+      datos de perfil y tu sesión, y las respuestas y fotografías que aún no se han enviado.</p>
+    <ul>
+      <li>Cada respuesta pendiente se borra del teléfono en cuanto el servidor la recibe.</li>
+      <li>Al cerrar sesión se borran tu sesión, tu perfil y las encuestas descargadas. Las respuestas
+        pendientes se conservan para poder enviarse.</li>
+      <li>Al desinstalar la app se borra todo lo que guarda en el teléfono, incluidas las respuestas que
+        no se hayan enviado.</li>
+      <li>Si tienes activada la copia de seguridad de Android, el sistema puede incluir los datos de la
+        app en la copia de tu cuenta de Google.</li>
+    </ul>
+  </section>
+
+  <section id="conservacion">
+    <h2>8. Cuánto tiempo los conservamos</h2>
+    <ul>
+      <li><strong>Datos de tu cuenta</strong>: mientras la cuenta esté activa, o hasta que pidas
+        eliminarla (sección <a href="#eliminar-cuenta">11</a>).</li>
+      <li><strong>Respuestas de las encuestas</strong>: el tiempo necesario para los estudios de los que
+        forman parte y para cumplir obligaciones legales. Después se eliminan o se desvinculan de las
+        personas a las que se refieren.</li>
+      <li><strong>Estadísticas de uso y reportes de errores</strong>: se borran automáticamente al
+        terminar los plazos de conservación de Google y de Sentry.</li>
+    </ul>
+  </section>
+
+  <section id="seguridad">
+    <h2>9. Seguridad</h2>
+    <p>Aplicamos medidas administrativas, técnicas y físicas para proteger los datos:</p>
+    <ul>
+      <li>Las contraseñas se guardan con <em>hash</em>.</li>
+      <li>Las solicitudes de la app al servidor se autentican con un token de sesión.</li>
+      <li>El panel de administración está restringido al personal autorizado.</li>
+      <li>El acceso al servidor está restringido.</li>
+    </ul>
+    <p>Ningún sistema es infalible. Si ocurre una vulneración de seguridad que afecte de forma
+      significativa tus derechos, te lo informaremos.</p>
+  </section>
+
+  <section id="derechos">
+    <h2>10. Tus derechos (ARCO)</h2>
+    <p>Tienes derecho a <strong>acceder</strong> a tus datos, <strong>rectificarlos</strong>,
+      <strong>cancelarlos</strong> u <strong>oponerte</strong> a su tratamiento (derechos ARCO).
+      También puedes <strong>revocar tu consentimiento</strong> o pedir que se <strong>limite</strong>
+      el uso o la divulgación de tus datos.</p>
+    <p>Para hacerlo, escribe a <a href="mailto:factura@riosagconsulting.com">factura@riosagconsulting.com</a>
+      e incluye:</p>
+    <ul>
+      <li>Tu nombre, y tu nombre de usuario y teléfono registrados. Si fuiste entrevistado o
+        entrevistada, los datos que permitan localizar la encuesta (fecha, lugar y estudio).</li>
+      <li>Una descripción clara de lo que solicitas.</li>
+      <li>Un documento que acredite tu identidad o, si actúas por otra persona, tu representación.</li>
+    </ul>
+    <p>Te responderemos en un plazo máximo de 20 días hábiles. Si la solicitud procede, se hará
+      efectiva dentro de los 15 días hábiles siguientes.</p>
+  </section>
+
+  <section id="eliminar-cuenta">
+    <h2>11. Eliminar tu cuenta y tus datos</h2>
+    <p>Para eliminar tu cuenta de <strong>AgroRadar</strong> (responsable: RIOS FIGUEROA VICTOR MANUEL)
+      y los datos asociados a ella:</p>
+    <ol>
+      <li>Envía un correo a <a href="mailto:factura@riosagconsulting.com?subject=Eliminar%20cuenta%20AgroRadar">factura@riosagconsulting.com</a>
+        con el asunto <strong>«Eliminar cuenta AgroRadar»</strong>.</li>
+      <li>Incluye tu nombre de usuario y el teléfono con el que te registraste.</li>
+      <li>Para confirmar que la solicitud es tuya, podemos comunicarnos contigo a ese teléfono.</li>
+    </ol>
+    <div class="card">
+      <p><strong>Qué se elimina</strong>, en un plazo máximo de 30 días: tu nombre, tu teléfono, tu
+        nombre de usuario, tu contraseña y los identificadores de notificaciones. La cuenta deja de
+        funcionar.</p>
+      <p><strong>Qué se conserva</strong>: las encuestas que ya enviaste forman parte de los estudios
+        y se conservan desvinculadas de tu identidad, es decir, sin tu nombre, teléfono ni usuario.</p>
+    </div>
+    <p>Desinstalar la app borra los datos guardados en el teléfono, pero no elimina tu cuenta.</p>
+  </section>
+
+  <section id="menores">
+    <h2>12. Menores de edad</h2>
+    <p>AgroRadar es una herramienta de trabajo para personas mayores de 18 años y no está dirigida a
+      menores de edad. Si un estudio requiere entrevistar a una persona menor de edad, se debe contar
+      antes con el consentimiento de su madre, padre o tutor.</p>
+  </section>
+
+  <section id="cambios">
+    <h2>13. Cambios a este aviso</h2>
+    <p>Cualquier cambio a este aviso se publicará en esta misma página, con la fecha de actualización
+      al inicio. Cuando el cambio sea relevante, también lo comunicaremos por medio de la app o del
+      teléfono registrado.</p>
+  </section>
+
+  <section id="autoridad">
+    <h2>14. Autoridad</h2>
+    <p>Si consideras que tu derecho a la protección de datos personales ha sido vulnerado, puedes
+      acudir ante la Secretaría Anticorrupción y Buen Gobierno, autoridad garante en materia de
+      protección de datos personales en posesión de los particulares.</p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>AgroRadar · RIOS FIGUEROA VICTOR MANUEL ·
+      <a href="mailto:factura@riosagconsulting.com">factura@riosagconsulting.com</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
